@@ -1,0 +1,49 @@
+@import "variables";
+
+@font-face {
+  font-family: 'customicons';
+  src:  url('#{$customicons-font-path}/customicons.eot?js8924');
+  src:  url('#{$customicons-font-path}/customicons.eot?js8924#iefix') format('embedded-opentype'),
+    url('#{$customicons-font-path}/customicons.ttf?js8924') format('truetype'),
+    url('#{$customicons-font-path}/customicons.woff?js8924') format('woff'),
+    url('#{$customicons-font-path}/customicons.svg?js8924#customicons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.customicon {
+  &:before, &:after {
+    font-family: 'customicons' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+.icon-ring {
+  &:before {
+    content: $icon-ring;
+  }
+}
+.icon-arrow-down {
+  &:before {
+    content: $icon-arrow-down;
+  }
+}
+.icon-arrow-up {
+  &:before {
+    content: $icon-arrow-up;
+  }
+}
+.icon-dropdown {
+  &:before {
+    content: $icon-dropdown;
+  }
+}
+

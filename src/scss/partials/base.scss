@@ -1,0 +1,92 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  min-height: 100%;
+  overflow-x: hidden;
+  font-family: sans-serif;
+  font-size: 0.625rem;
+  -webkit-tap-highlight-color: transparent;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased; }
+
+body {
+  font-family: $font-base;
+  font-weight: 400;
+  font-size: $size-font-base;
+  line-height: 1.5;
+  color: $color-font-body;
+  background-color: #fff;
+  min-height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+h1 {
+  font-size: $size-font-h1;
+  color: $color-font-headings;
+  display: inline;
+}
+
+h2 {
+  font-size: $size-font-h2;
+  color: $color-font-headings;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a, a:hover, a:focus {
+  color: #a6a8ab;
+}
+
+a:focus {
+  outline: 0;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.wrapper {
+  height: 100%;
+  padding: 0;
+  width: $width-wrapper;
+}
+
+.main {
+  min-height: 100%;
+  padding: 0;
+  height: 100%;
+}
+
+.content {
+  height: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  padding-top: $height-header;
+  position: relative;
+  background-color: #fcfcfc;
+}

@@ -1,0 +1,15 @@
+{
+  "name": "foodprovider",
+  "description": "",
+  "license": "ISC",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "3.*"
+  }
+}

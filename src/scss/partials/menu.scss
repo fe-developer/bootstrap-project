@@ -1,0 +1,41 @@
+.menu {
+	background-color: #FFF;
+	box-shadow: 2px 0 45px 0 rgba(0,0,0,0.05);
+	min-height: 100%;
+	padding: 0;
+	padding-bottom: $height-header;
+	position: fixed;
+	z-index: 100;
+	&__icon {
+		height: $height-header;
+		width: 100%;
+		line-height: $height-header;
+		text-align: center;
+		position: relative;
+		cursor: pointer;
+
+		&_top {
+			box-shadow: 0 0 11px 0 rgba(0,0,0,0.04);
+			border-bottom: 1px solid rgba(0,0,0,0.02);
+		}
+
+		&_bottom {
+			position: absolute;
+			bottom: 0;
+		}
+
+		&_active, &:hover {
+			color: #ef7402;
+			&:before {
+				content: '';
+				position: absolute;
+				left: 0;
+				top: calc( 50% - 18px );
+				width: 3px;
+				height: 36px;
+				background-color: #ED731F;
+				box-shadow: 0 0 5px 0 rgba(237,115,31,0.4), 2px 0 8px 0 rgba(237,115,31,0.26);
+			}
+		}
+	}
+}

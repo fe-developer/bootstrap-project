@@ -1,0 +1,261 @@
+$dropdown_height: 24px;
+.dropdown {
+  width: 83px;
+  height: $dropdown_height;
+  border: 1px solid #4A90E2;
+  border-radius: 100px;
+  font-weight: 600;
+  text-align: center;
+  color: #4A90E2;
+  display: inline-block;
+  &__button {
+    width: inherit;
+    height: inherit;
+    padding: 0;
+    padding-right: 9px;
+    margin: 0;
+    &:after {
+      top: 0;
+      line-height: $dropdown_height;
+      content: $icon-dropdown;
+      font-size: 6px;
+      position: absolute;
+      right: 10px;
+    }
+  }
+}
+
+.block-title {
+  font-size: 1.4rem;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: $color-font-headings;
+
+  &:before {
+    content: $icon-ring;
+    font-size: 0.8rem;
+    padding-right: 15px;
+  }
+}
+
+.title-block {
+  position: relative;
+  height: 24px;
+  margin-bottom: 20px;
+  &:after {
+    content: $icon-dropdown;
+    position: absolute;
+    right: 0;
+    height: inherit;
+    line-height: 24px;
+    color: #dddddd;
+  }
+}
+
+.full-width-block {
+  padding: 0 15px 15px 15px;
+}
+
+.half-width-block {
+  padding: 0 15px 15px 15px;
+  &:nth-child(even) {
+    padding-left: 0;
+  }
+}
+
+.filter {
+	position: relative;
+	display: inline-block;
+
+	&__label {
+		margin-right: 5px;
+	}
+}
+
+.ordersnumber {
+	font-size: 5.5rem;
+	line-height: 1;
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+
+.lastmonth {
+	font-size: 1.3rem;
+	color: #B7B2B1;
+	&__number {
+		color: $color-font-body;
+	}
+}
+
+.dashboard {
+	height: 100%;
+	min-height: 100%;
+
+	&__left, &__right {
+		background-color: #FCFCFC;
+		height: 100%;
+		padding: 0;
+	}
+
+	&__right {
+		border-left: 1px solid #E9E9E9;
+	}
+
+	&__block {
+		padding: 20px;
+		background-color: #FFFFFF;
+		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05);
+		border-radius: 8px;
+	}
+}
+
+.orders {
+	background-color: #FCFCFC;
+	height: 100%;
+	padding: 20px;
+
+	&__chart {
+		margin-top: 20px;
+	}
+}
+
+.pending {
+	background-color: #F7F7F7;
+	height: 217px;
+	border-bottom: 1px solid #E9E9E9;
+	margin-bottom: 15px;
+
+	&__orders {
+		position: relative;
+		height: 100%;
+		padding: 20px;
+	}
+
+	&__ordersnumber {
+		position: relative;
+		&:before {
+			font-size: 1.5rem;
+			position: absolute;
+			margin-left: -20px;
+			top: 50%;
+			margin-top: -7.5px;
+		}
+
+		&_up {
+			&:before {
+				content: $icon-arrow-up;
+				color: rgba(91, 211, 111, 1.0);	
+			}
+		}
+
+		&_down {
+			&:before {
+				content: $icon-arrow-down;
+				color: rgba(213, 36, 60, 1.0);
+			}
+		}
+	}
+
+	&__mealplan {
+		height: 100%;
+		position:relative;
+		padding: 20px;
+
+    &:before, &:after {
+			content: "";
+	    position: absolute;
+    }
+
+    &:before {
+    	width: 2px;
+	    top: 10px;
+	    bottom: 10px;
+	    left: 0;
+	    right: 50%;
+	    background: linear-gradient(to bottom, #f5f4f4 0%,#eaeaea 50%,#f5f4f4 100%);
+	    border-radius: 100px;
+		}
+	}
+}
+
+.statistics {
+	&__title {
+		&:before {
+			color: $color-statistics;
+		}
+	}
+
+	&__dropdown {
+		margin-right: 15px;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	&__chart {
+
+	}
+}
+
+.fooditem {
+	clear: both;
+	margin-bottom: 12px;
+	&__imagebox {
+		width: 35px;
+		height: 35px;
+		float: left;
+		overflow: hidden;
+		position: relative;
+		border-radius: 100%;
+		margin-right: 15px;
+	}
+	&__image {
+		height: 100%;
+		min-width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	&__title {
+		max-width: 144px;
+		display: inline-block;
+		font-size: 1.1rem;
+	}
+	&__number {
+		display: inline-block;
+		float: right;
+		font-size: 1.3rem;
+		height: 35px;
+		line-height: 35px;
+		
+		&_orderedfood {
+			color: $color-orderedfood;
+		}
+
+		&_orderedmealplan {
+			color: $color-orderedmealplan;
+		}
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.orderedfood {
+	&__title {
+		&:before {
+			color: $color-orderedfood;
+		}
+	}
+}
+
+.orderedmealplan {
+	&__title {
+		&:before {
+			color: $color-orderedmealplan;
+		}
+	}
+}

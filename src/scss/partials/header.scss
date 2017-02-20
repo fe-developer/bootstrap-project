@@ -1,0 +1,29 @@
+.head {
+	background-color: #FFF;
+	height: $height-header;
+	line-height: 82px;
+	border-bottom: 1px solid #E9E9E9;
+	padding-left: 45px;
+	padding-right: 55px;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 99;
+
+	&__title {
+		height: inherit;
+		line-height: inherit;
+	}
+
+	&__logo {
+
+	}
+
+	&__search {
+
+	}
+
+	&__notification {
+
+	}
+}
